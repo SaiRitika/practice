@@ -71,9 +71,12 @@ while k<len(l):
         pt+=matrix[c][b]
     k+=2
 print("Padded Plaintext is:",pt)
+
+openssl
+for /l %i in (1,1,10) do (openssl rand -base64 15 | openssl enc -base64 -A | powershell -Command "$input.Substring(0, 12)")
+
 hill
 import numpy as np
-
 pt = input("Enter plaintext: ")
 key = input("Enter key: ")
 
@@ -103,5 +106,6 @@ for k in range(0, len(pt), 3):
 
     for i in range(3):
         ct += chr(encrypted_matrix[i][0] + 65)  # Convert back to ASCII and add to ciphertext
-
 print("Ciphertext:", ct)
+
+
